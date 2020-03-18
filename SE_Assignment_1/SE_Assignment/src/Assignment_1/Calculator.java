@@ -18,6 +18,10 @@ public class Calculator {
 	public int sub(int a, int b) {
 		return a - b;
 	}
+        public int mult(int a, int b){
+            return a * b;
+        }
+
 	public static final void main(String[] args) {
             
             Scanner scan = new Scanner(System.in);
