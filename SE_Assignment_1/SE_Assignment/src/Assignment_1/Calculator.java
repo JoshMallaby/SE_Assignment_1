@@ -12,10 +12,10 @@ package Assignment_1;
 import java.util.Scanner;
 
 public class Calculator {
-	public int add(int a, int b) {
+	public static int add(int a, int b) {
 		return a + b;
 	}
-	public int sub(int a, int b) {
+	public static int sub(int a, int b) {
 		return a - b;
 	}
         public int mult(int a, int b){
@@ -31,7 +31,18 @@ public class Calculator {
             System.out.println("Press 'a' for addition, 'b' for subraction:");
             String input = scan.nextLine();
             
-            System.out.println(input);
+            if(input.equals("a"))
+            {
+                System.out.println("Enter first number:");
+                int num1 = scan.nextInt();
+                System.out.println("Enter second number:");
+                int num2 = scan.nextInt();
+                
+                int result = add(num1, num2);
+                System.out.println(result);
+                
+            }
+            //System.out.println(input);
             
                 
 	}
